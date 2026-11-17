@@ -24,6 +24,7 @@
     --ring:#FFFFFF; --halo:.18; --node-stroke:none;
   }
   *{box-sizing:border-box}
+  html{background:#0D0A22}
   html{scroll-behavior:smooth}
   body{margin:0;background:var(--lav);color:var(--ink);font:400 1.0625rem/1.6 var(--body);-webkit-font-smoothing:antialiased}
   a{color:inherit}
