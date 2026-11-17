@@ -32,7 +32,7 @@
   const rgba = (hex,a) => { const h=hex.replace('#',''); const n=parseInt(h.length===3?h.split('').map(c=>c+c).join(''):h,16); return `rgba(${n>>16&255},${n>>8&255},${n&255},${a})`; };
 
   const nodes = [
-    {id:'hosp', t:'Hospitality', g:'start', r:17, x:.58, y:.78, d:'Seven years in hospitality, from bartender to assistant restaurant manager. Where I learned to plan, keep calm and look after people.'},
+    {id:'hosp', t:'Hospitality', g:'start', r:17, x:.58, y:.78, d:'Over a decade in hospitality, from bartender to assistant restaurant manager. Where I learned to plan, keep calm and look after people.'},
     {id:'finops', t:'FinOps', g:'fin', r:20, x:.70, y:.55, d:'Making cloud costs easy to see and explain, so teams can make good decisions about scaling.'},
     {id:'ce', t:'Cost Explorer', g:'fin', r:12, x:.84, y:.66, d:'Dashboards that show where cloud spend goes, by service and by tag.'},
     {id:'tags', t:'Tagging', g:'fin', r:11, x:.80, y:.80, d:'A tagging strategy that makes every cost traceable to what created it.'},
@@ -56,7 +56,7 @@
     ['cw','logs'],['cw','sns'],['cw','tf'],['finops','cw'],['tf','tg'],['tf','sam'],['tf','finops'],['sam','lam'],['lam','ddb'],['lam','s3'],['s3','cf'],
     ['lam','py'],['ddb','py'],['git','tf'],['git','web'],['ce','bed'],['sam','cf'],['tags','tf']];
   const story = [
-    ['hosp','2012 to 2019','Where it started','Seven years in hospitality, growing from bartender to assistant restaurant manager.'],
+    ['hosp','Before 2019','Where it started','Over a decade in hospitality, growing from bartender to assistant restaurant manager.'],
     ['py','2024','Learning to code','A software development bootcamp, where Python became my go-to language.'],
     ['web','2024 to 2025','Building for real people','Websites for small businesses, and a Figma prototype for Hyve Dynamics.'],
     ['lam','Jan to May 2026','AWS re/Start','My first serverless app: the AWS Services Glossary.'],

@@ -97,7 +97,7 @@
   .route{position:relative;list-style:none;margin:0;padding:0}
   .route::before,.route .fill{content:"";position:absolute;left:50%;top:0;width:10px;margin-left:-5px;border-radius:10px}
   .route::before{bottom:0;background:var(--rule)}
-  .route .fill{height:0;background:linear-gradient(var(--coral) 0 28%, var(--grey) 28% 45%, var(--mint) 45% 70%, var(--sky) 70% 85%, var(--lilac) 85%);background-size:100% var(--full,1000px);background-repeat:no-repeat}
+  .route .fill{height:0;background:linear-gradient(var(--coral) 0 17%, var(--grey) 17% 31%, var(--mint) 31% 58%, var(--sky) 58% 86%, var(--lilac) 86%);background-size:100% var(--full,1000px);background-repeat:no-repeat}
   .stop{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:0 5rem;padding-bottom:3.5rem}
   .stop:last-child{padding-bottom:0}
   .stop .pin{position:absolute;left:50%;top:1.2rem;width:2.4rem;height:2.4rem;margin-left:-1.2rem;border-radius:50%;background:var(--paper);border:6px solid var(--rule);transition:border-color .35s, transform .35s;z-index:1}
@@ -495,7 +495,9 @@ footer .wrap{align-items:center}
 .proj-side .mini{margin-top:1.25rem}
 .card{position:relative}
 .badge{float:none;position:absolute;top:1.3rem;right:1.3rem;margin:0}
-.card .when{margin-right:3.4rem}
+.card .when{margin-right:0}
+.card h3,.card .where{padding-right:0}
+.card > .when:first-of-type{max-width:calc(100% - 3.6rem)}
 .card h3{padding-right:2.8rem}
 @media (max-width:860px){.badge{width:38px;height:38px;border-radius:12px;top:1.1rem;right:1.1rem}.badge .ic{width:19px;height:19px}.card h3{padding-right:0}}
 /* ===== Cursor light: desktop mouse only ===== */
@@ -514,3 +516,7 @@ html[data-theme=glass] .node-card{background:rgba(23,18,58,.82);backdrop-filter:
 html[data-theme=glass] .node-card p{color:var(--ink-soft)}
 html[data-theme=glass] .node-card .tag{color:#1A0F2E}
 html[data-theme=glass] .node-card button{background:rgba(255,255,255,.1);color:#fff}
+
+/* footer domain */
+.foot-domain{color:#E9E5FF;text-decoration:none;font-weight:600}
+.foot-domain:hover{color:#6EE7B7}
